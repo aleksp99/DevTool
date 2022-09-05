@@ -1,6 +1,6 @@
 ﻿$ib = 'D:\InfoBase\DevTool'; $ibn = 'Администратор'
 $repo = 'D:\1C\DevTool'
-$updateCF = 'C:\Users\aleks\Downloads\Инструменты разработчика Конфигурация 6.42.4.cf'
+$updateCF = 'C:\Users\aleks\Downloads\Инструменты разработчика Конфигурация 6.43.1.cf'
 
 Clear-Host
 Set-Location 'C:\Program Files\1cv8\8.3.21.1484\bin'
