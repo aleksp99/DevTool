@@ -1,6 +1,6 @@
 ﻿$ib = 'D:\InfoBase\DevTool'; $ibn = 'Администратор'
 $repo = 'D:\1C\DevTool'
-$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.45.1.cf'
+$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.45.2.cf'
 
 Clear-Host
 Set-Location 'C:\Program Files\1cv8\8.3.21.1484\bin'
@@ -38,7 +38,7 @@ $vendor |
         # run merge
         IF (Test-Path (Join-Path $folder "vendorNEW\$f")) {
             Remove-Item (Join-Path $folder "mainNEW\$f")
-            Start-Process -FilePath "C:\Program Files\KDiff3\bin\kdiff3.exe" -Wait -ArgumentList """$(Join-Path $folder "vendor\$f")"" ""$(Join-Path $folder "main\$f")"" ""$(Join-Path $folder "vendorNEW\$f")"" -o ""$(Join-Path $folder "mainNEW\$f")"""
+            Start-Process -FilePath "C:\Program Files\KDiff3\bin\kdiff3.exe" -Wait -ArgumentList """$(Join-Path $folder "vendor\$f")"" ""$(Join-Path $folder "main\$f")"" ""$(Join-Path $folder "vendorNEW\$f")"" -o ""$(Join-Path $folder "mainNEW\$f")"" --auto"
 			Copy-Item (Join-Path $folder "mainNEW\$f") (Join-Path $repo "src\$f")
         } ELSE {
             'not found is new vender - $f'
