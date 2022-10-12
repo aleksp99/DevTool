@@ -1,9 +1,9 @@
-﻿$ib = 'D:\InfoBase\DevTool'; $ibn = 'Администратор'
-$repo = 'D:\1C\DevTool'
-$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.46.1.cf'
+﻿$ib = 'C:\Users\admin\Documents\1C\DevTool'; $ibn = 'Администратор'
+$repo = 'C:\Users\admin\Documents\GitHub\DevTool'
+$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.48.1.cf'
 
 Clear-Host
-Set-Location 'C:\Program Files\1cv8\8.3.21.1484\bin'
+Set-Location 'C:\Program Files\1cv8\8.3.22.1603\bin'
 
 $folder = New-Item -ItemType Directory -Path (Join-Path $env:TEMP (New-Guid))
 
