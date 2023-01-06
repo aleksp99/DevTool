@@ -1,6 +1,6 @@
-﻿$ib = 'C:\Users\admin\Documents\1C\DevTool'; $ibn = 'Администратор'
+﻿$ib = 'D:\InfoBase\DevTool'; $ibn = 'Администратор'
 $repo = 'C:\Users\admin\Documents\GitHub\DevTool'
-$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.57.2.cf'
+$updateCF = 'C:\Users\admin\Downloads\Инструменты разработчика Конфигурация 6.58.2.cf'
 
 Clear-Host
 Set-Location 'C:\Program Files\1cv8\8.3.23.1437\bin'
